@@ -1,0 +1,145 @@
+- var pageTitle = 'Online TV'
+
+
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    style 
+        include styles/normalize.css 
+        include styles/style.css
+        
+  body
+    include modules/header
+    
+    section.section-banner
+        img.section-banner__image(src="images/justice-league.jpg", alt="")
+        .container 
+            .banner 
+                h1.banner__title Zack Snyder's Justice League
+                .banner-info 
+                    span.banner-info__year 2021
+                    span.banner-info__age.border 18+
+                    span.banner-info__time 4h 2min
+                    span.banner-info__rate 8.8
+                p.banner__text Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
+                .banner-control 
+                    button.banner-control__btn.banner-control__btn-main Watch
+                    button.banner-control__btn.banner-control__btn-more More information 
+    section.section 
+        .container 
+            h2.section__h2
+                a(href="#").section__h2-link Trending TV Shows
+                i.right-arrow
+            .films 
+                .films-item 
+                    a(href="#").films__link
+                        img(src="../src/images/posters/show1.jpg", alt="").films__img
+                .films-item 
+                    a(href="#").films__link
+                        img(src="../src/images/posters/show2.jpg", alt="").films__img
+                .films-item 
+                    a(href="#").films__link
+                        img(src="../src/images/posters/show3.jpg", alt="").films__img
+                .films-item 
+                    a(href="#").films__link
+                        img(src="../src/images/posters/show4.jpg", alt="").films__img
+                .films-item 
+                    a(href="#").films__link
+                        img(src="../src/images/posters/show5.jpg", alt="").films__img
+                .films-item 
+                    a(href="#").films__link
+                        img(src="../src/images/posters/show6.jpg", alt="").films__img
+    section.section 
+        .container 
+            h2.section__h2
+                a(href="#").section__h2-link Trending Films 
+                i.right-arrow
+            .films 
+                .films-item 
+                    a(href="#").films__link
+                        img(src="../src/images/posters/film1.jpg", alt="").films__img
+                .films-item 
+                    a(href="#").films__link
+                        img(src="../src/images/posters/film2.jpg", alt="").films__img
+                .films-item 
+                    a(href="#").films__link
+                        img(src="../src/images/posters/film3.jpg", alt="").films__img
+                .films-item 
+                    a(href="#").films__link
+                        img(src="../src/images/posters/film4.jpg", alt="").films__img
+                .films-item 
+                    a(href="#").films__link
+                        img(src="../src/images/posters/film5.jpg", alt="").films__img
+                .films-item 
+                    a(href="#").films__link
+                        img(src="../src/images/posters/film6.jpg", alt="").films__img
+            button.banner-control__btn.banner-control__btn-see See more
+
+    section.section 
+        .container 
+            h2.section__h2
+                a(href="#").section__h2-link Popular Genres
+                i.right-arrow
+            .genres 
+                .genres-item.genres-item__romance 
+                    h3.genres__title Romance
+                .genres-item.genres-item__drama  
+                    h3.genres__title Drama
+                .genres-item.genres-item__historical  
+                    h3.genres__title Historical 
+                .genres-item.genres-item__action  
+                    h3.genres__title Action 
+                .genres-item.genres-item__scifi  
+                    h3.genres__title Sci-fi 
+                .genres-item.genres-item__horror 
+                    h3.genres__title Horror 
+                .genres-item.genres-item__comedy 
+                    h3.genres__title Comedy 
+                .genres-item.genres-item__documentary  
+                    h3.genres__title Documentary
+
+    section.section 
+        .container 
+            h2.section__h2
+                a(href="#").section__h2-link Popular Actors
+                i.right-arrow
+            .actors 
+                .actors-item
+                    a(href="#").actors__link
+                        img(src="images/actors/actor1.jpg", alt="").actors__img
+                    h3.actors__name Colin Farrell
+                .actors-item
+                    a(href="#").actors__link
+                        img(src="images/actors/actor2.jpg", alt="").actors__img
+                    h3.actors__name Jake Gyllenhaal
+                .actors-item
+                    a(href="#").actors__link
+                        img(src="images/actors/actor3.jpg", alt="").actors__img
+                    h3.actors__name Robert Pattinson 
+                .actors-item
+                    a(href="#").actors__link
+                        img(src="images/actors/actor4.jpg", alt="").actors__img
+                    h3.actors__name Kristen Stewart
+                .actors-item
+                    a(href="#").actors__link
+                        img(src="images/actors/actor5.jpg", alt="").actors__img
+                    h3.actors__name Scarlett Johansson
+                .actors-item
+                    a(href="#").actors__link
+                        img(src="images/actors/actor6.jpg", alt="").actors__img
+                    h3.actors__name Margo Robbie
+
+    section.section 
+        .container
+            .advert 
+                .advert-item
+                    img(src="../src/images/adverb.jpg", alt="").advert__img
+                .advert-item
+                    h2.advert__text Coming Soon
+
+    section.section 
+        .container 
+            .offer 
+                button.banner-control__btn.banner-control__btn-register Register Now
+    include modules/footer
